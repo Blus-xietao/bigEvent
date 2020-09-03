@@ -10,7 +10,7 @@ $.ajaxPrefilter(function (options) {
     }
     // 全局调用complete函数
     options.complete = function (res) {
-        console.log(res);
+        // console.log(res);
         // 使用res.responseJSON获取信息
         if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
             // 1. 清空token
